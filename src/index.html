@@ -1,13 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>MP1</title>
-    </head>
-    <body>
-        <h1>Hello World! Welcome to MP1!</h1>
-        <img src="assets/image.jpg">
-    </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sea Cucumber Bioinspiration</title>
+  <!-- Icons & Fonts -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Sticky Navbar -->
+  <header class="navbar" id="navbar">
+    <a href="#hero" class="logo"><i class="fa-solid fa-water" aria-hidden="true"></i> Sea Cucumber</a>
+
+    <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+      <i class="fa-solid fa-bars" aria-hidden="true"></i>
+    </button>
+
+    <nav id="nav-links" aria-label="Primary Navigation">
+      <a href="#hero">Home</a>
+      <a href="#about">Biology</a>
+      <a href="#carousel">Applications</a>
+      <a href="#video">Video</a>
+      <a href="#modal-section">Research</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="progress-bar" id="progress-bar"></div>
+  </header>
+
+  <!-- Hero -->
+  <section id="hero" class="hero fade-in">
+    <h1>Sea Cucumbers: Nature’s Shape Shifters</h1>
+    <p>Mutable collagenous tissue allows sea cucumbers to stiffen or soften their bodies in seconds that inspires innovations in robotics and medicine.</p>
+    <button class="btn" data-open="#modal-biology">Learn More</button>
+  </section>
+
+  <!-- Biology -->
+  <section id="about" class="about">
+    <h2>Biology: Mutable Collagenous Tissue</h2>
+    <div class="bio-grid">
+      <div class="bio-card">
+        <i class="fa-solid fa-water" aria-hidden="true"></i>
+        <p>Sea cucumbers can instantly change their body stiffness to avoid predators or squeeze through tight spaces.</p>
+      </div>
+      <div class="bio-card">
+        <i class="fa-solid fa-dna" aria-hidden="true"></i>
+        <p>This is controlled by <strong>mutable collagenous tissue</strong>, which rearranges collagen fibers under nervous system signals.</p>
+      </div>
+      <div class="bio-card">
+        <i class="fa-solid fa-shield-halved" aria-hidden="true"></i>
+        <p>Research (Wilkie, 2002) shows these tissues act like “biological smart materials” that toggle between soft and rigid states.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Applications Carousel -->
+  <section id="carousel" class="carousel-section">
+    <h2>Bioinspired Applications</h2>
+    <div class="carousel" aria-roledescription="carousel">
+      <button class="prev" aria-label="Previous slide">&#10094;</button>
+      <div class="carousel-track">
+        
+        <!-- Slide 1 -->
+        <div class="slide">
+          <i class="fa-solid fa-robot" aria-hidden="true"></i>
+          <img src="./assets/seacucumber.jpg" alt="Close-up of sea cucumber skin with collagen knobs">
+          <p>Sea cucumber dermis demonstrates <strong>mutable collagenous tissue</strong>, a living smart material that can rapidly shift from soft to rigid.</p>
+        </div>
+        
+        <!-- Slide 2 -->
+        <div class="slide">
+          <i class="fa-solid fa-screwdriver-wrench" aria-hidden="true"></i>
+          <img src="./assets/cucumber.jpeg" alt="Stethoscope representing medical devices">
+          <p>Medical devices like catheters and surgical tools could use this principle to remain flexible during navigation and lock rigidly when needed.</p>
+        </div>
+        
+        <!-- Slide 3 -->
+        <div class="slide">
+          <i class="fa-solid fa-laptop-medical" aria-hidden="true"></i>
+          <img src="./assets/starfish.jpg" alt="Underwater robot with multiple legs">
+          <p>Soft-bodied underwater robots mimic sea cucumber tissue, allowing them to crawl gently across reefs yet stiffen to handle heavy loads.</p>
+        </div>
+        
+        <!-- Slide 4 -->
+        <div class="slide">
+          <i class="fa-solid fa-layer-group" aria-hidden="true"></i>
+          <img src="./assets/mantis.jpg" alt="Colorful mantis shrimp close-up">
+          <p>The <strong>Bouligand structure</strong> of mantis shrimp shells and sea cucumber collagen inspire new <em>composite materials</em> for aerospace and biomedical use.</p>
+        </div>
+
+      </div>
+      <button class="next" aria-label="Next slide">&#10095;</button>
+    </div>
+  </section>
+
+  <!-- Video -->
+  <section id="video" class="video">
+    <h2>See It in Action</h2>
+    <video controls poster="./assets/seacuke.jpg">
+      <source src="./assets/seacuke.mp4" type="video/mp4">
+      Your browser does not support HTML5 video.
+    </video>
+  </section>
+
+  <!-- Research Section -->
+  <section id="modal-section" class="modal-section">
+    <h2>Research Spotlight</h2>
+    <p>Explore the scientific research that connects sea cucumber biology to advanced engineering materials. Select a topic below to dive deeper:</p>
+    <div class="research-buttons">
+      <button class="btn" data-open="#modal-biology">Biology Studies</button>
+      <button class="btn" data-open="#modal-engineering">Engineering Applications</button>
+      <button class="btn" data-open="#modal-materials">Materials Science</button>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact">
+    <h2>Get in Touch</h2>
+    <form>
+      <input type="text" placeholder="Your name" aria-label="Your name" />
+      <input type="email" placeholder="Your email" aria-label="Your email" />
+      <textarea rows="4" placeholder="Your message" aria-label="Your message"></textarea>
+      <button class="btn" type="submit">Send</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Sea Cucumber Bioinspiration</p>
+    <div class="socials" aria-label="Social links">
+      <a href="https://github.com/" target="_blank"><i class="fa-brands fa-github"></i></a>
+      <a href="https://youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+      <a href="https://linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+    </div>
+  </footer>
+
+  <!-- Biology Modal -->
+  <div id="modal-biology" class="modal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-content">
+      <button class="close" data-close aria-label="Close modal">&times;</button>
+      <h3>Biology Studies</h3>
+      <p><strong>Wilkie (2002)</strong> showed that mutable collagenous tissue can stiffen or soften within seconds under nervous system control.</p>
+      <p>This ability allows sea cucumbers to escape predators by softening or defend themselves by stiffening their dermis. It’s one of the clearest examples of “living smart materials.”</p>
+    </div>
+  </div>
+
+  <!-- Engineering Modal -->
+  <div id="modal-engineering" class="modal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-content">
+      <button class="close" data-close aria-label="Close modal">&times;</button>
+      <h3>Engineering Applications</h3>
+      <p><strong>Zhang et al. (2016)</strong> developed polymers that mimic sea cucumber tissue, allowing robotic arms to bend softly and then stiffen to lift objects.</p>
+      <p>Applications include surgical tools, disaster relief robots, and adaptive wearable devices that need both flexibility and strength.</p>
+    </div>
+  </div>
+
+  <!-- Materials Modal -->
+  <div id="modal-materials" class="modal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-content">
+      <button class="close" data-close aria-label="Close modal">&times;</button>
+      <h3>Materials Science</h3>
+      <p><strong>Trotter et al. (1995)</strong> studied how collagen fibrils assemble/disassemble in echinoderms. These insights led to composite materials with tunable stiffness.</p>
+      <p>Modern research applies these principles to 3D-printed polymers, aerospace materials, and biomedical implants that adapt to mechanical stress.</p>
+    </div>
+  </div>
+</body>
 </html>
