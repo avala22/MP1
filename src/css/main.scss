@@ -15,7 +15,7 @@ h1, h2, h3 {
   margin-bottom: 1rem;
 }
 
-/* ===== NAVBAR ===== */
+/* NAVBAR */
 .navbar {
   position: sticky;
   top: 0;
@@ -29,8 +29,8 @@ h1, h2, h3 {
   z-index: 10;
 
   .logo {
-    color: $light !important;   /* force white */
-    text-decoration: none;      /* remove underline */
+    color: $light !important; 
+    text-decoration: none; 
     font-weight: 700;
     font-size: 1.4rem;
     display: flex;
@@ -38,12 +38,12 @@ h1, h2, h3 {
     gap: 0.4rem;
 
     i {
-      color: $brand; /* icon in brand color */
+      color: $brand; 
       font-size: 1.5rem;
     }
 
     &:hover {
-      color: $brand; /* hover color */
+      color: $brand; 
     }
   }
 
@@ -66,7 +66,7 @@ h1, h2, h3 {
   }
 }
 
-/* Hamburger (mobile only) */
+
 .hamburger {
   display: none;
   background: none;
@@ -94,7 +94,7 @@ nav a.active {
   font-weight: bold;
 }
 
-/* ===== HERO ===== */
+/* HERO  */
 .hero {
   position: relative;
   display: flex;
@@ -136,7 +136,7 @@ nav a.active {
   &:hover { transform: scale(1.1); }
 }
 
-/* ===== BIOLOGY ===== */
+/*  BIOLOGY  */
 .about {
   padding: 3rem 2rem;
   text-align: center;
@@ -169,7 +169,7 @@ nav a.active {
   }
 }
 
-/* ===== CAROUSEL ===== */
+/*  CAROUSEL*/
 .carousel-section {
   text-align: center;
   padding: 3rem 2rem;
@@ -207,8 +207,8 @@ nav a.active {
       img {
         width: 100%;
         max-width: 700px;
-        height: 350px; /* same height for all slides */
-        object-fit: cover; /* keeps them centered & consistent */
+        height: 350px; 
+        object-fit: cover; 
         border-radius: 10px;
         margin-bottom: 0.8rem;
       }
@@ -245,17 +245,17 @@ nav a.active {
   }
 }
 
-/* ===== VIDEO ===== */
+/* VIDEO */
 .video {
   text-align: center;
   padding: 3rem 2rem;
   video { max-width: 80%; border-radius: 10px; }
 }
 
-/* ===== RESEARCH ===== */
+/* RESEARCH*/
 .modal-section {
-  padding: 4rem 2rem;   /* bigger padding */
-  min-height: 50vh;     /* ensures highlight works */
+  padding: 4rem 2rem;
+  min-height: 50vh;
   text-align: center;
   background: #1a1f25;
 
@@ -274,7 +274,7 @@ nav a.active {
   }
 }
 
-/* ===== CONTACT ===== */
+/*  CONTACT */
 .contact {
   text-align: center;
   padding: 3rem 2rem;
@@ -293,7 +293,7 @@ nav a.active {
   }
 }
 
-/* ===== FOOTER ===== */
+/* FOOTER  */
 footer {
   text-align: center;
   padding: 1rem;
@@ -305,7 +305,7 @@ footer {
   }
 }
 
-/* ===== MODAL ===== */
+/*  MODAL  */
 .modal {
   position: fixed;
   inset: 0;
@@ -337,7 +337,7 @@ footer {
   to { opacity: 1; }
 }
 
-/* ===== RESPONSIVE ===== */
+/*  RESPONSIVE  */
 @media (max-width: 1024px) {
   .hamburger { display: block; }
   nav {
